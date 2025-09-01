@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Reports for Ticket Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-01 08:06+0000\n"
+"PO-Revision-Date: 2025-09-01 08:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: Catalan\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.1.29\n"
+"X-Domain: dl-ticket-manager-report"
+
+#: src/Plugin.php:97
+msgid "Average tickets per order:"
+msgstr "Mitjana de tiquets per comanda:"
+
+#: src/Plugin.php:140
+msgid "Buyers' Emails (CSV)"
+msgstr "Correus electrònics dels compradors (CSV)"
+
+#: src/Plugin.php:144
+msgid "Buyers' Location"
+msgstr "Ubicació dels compradors"
+
+#: src/Plugin.php:146
+msgid "Ciudad"
+msgstr "Ciutat"
+
+#: src/Plugin.php:96
+msgid "Conversion rate:"
+msgstr "Taxa de conversió:"
+
+#: src/Plugin.php:134
+msgid "Customers who bought more than one ticket:"
+msgstr "Clients que van comprar més d'una entrada:"
+
+#. Author of the plugin
+msgid "Daniel Lúcia"
+msgstr "Daniel Lúcia"
+
+#: src/Plugin.php:112
+msgid "Date/Time"
+msgstr "Data/Hora"
+
+#: src/Plugin.php:146
+msgid "Email"
+msgstr "Correu electrònic"
+
+#: src/Plugin.php:46
+msgid "Event ID:"
+msgstr "ID de l'esdeveniment:"
+
+#: src/Plugin.php:135
+msgid "First buyer:"
+msgstr "Primer comprador:"
+
+#. Author URI of the plugin
+msgid "http://www.daniellucia.es"
+msgstr "http://www.daniellucia.es"
+
+#. Description of the plugin
+msgid "Informes para el gestor de tickets."
+msgstr "Informes per al gestor de tickets."
+
+#: src/Plugin.php:136
+msgid "Last buyer:"
+msgstr "Últim comprador:"
+
+#: src/Plugin.php:170
+msgid "No tienes permisos para acceder a esta página."
+msgstr "No tens permisos per accedir a aquesta pàgina."
+
+#: src/Plugin.php:128
+msgid "No validations recorded."
+msgstr "No s'han registrat validacions."
+
+#: src/Plugin.php:103
+msgid "Not validated tickets:"
+msgstr "Bitllets no validats:"
+
+#: src/Plugin.php:133
+msgid "Number of unique buyers:"
+msgstr "Nombre de compradors únics:"
+
+#: src/Plugin.php:146
+msgid "País"
+msgstr "País"
+
+#: src/Plugin.php:146
+msgid "Provincia"
+msgstr "Província"
+
+#: src/Plugin.php:28 src/Plugin.php:29 src/Plugin.php:42
+msgid "Reports"
+msgstr "Informes"
+
+#. Name of the plugin
+msgid "Reports for Ticket Manager"
+msgstr "Informes per al gestor de tiquets"
+
+#: src/Plugin.php:92
+msgid "Sales Data"
+msgstr "Dades de vendes"
+
+#: src/Plugin.php:158
+msgid "There are no registered buyers."
+msgstr "No hi ha compradors registrats."
+
+#: src/Plugin.php:111
+msgid "Ticket ID"
+msgstr "ID del bitllet"
+
+#: src/Plugin.php:207
+msgid "Tickets report"
+msgstr "Informe de bitllets"
+
+#: src/Plugin.php:95
+msgid "Total revenue:"
+msgstr "Ingressos totals:"
+
+#: src/Plugin.php:94
+msgid "Total tickets sold:"
+msgstr "Total d'entrades venudes:"
+
+#: src/Plugin.php:113
+msgid "User"
+msgstr "Usuari"
+
+#: src/Plugin.php:131
+msgid "User/Buyer Data"
+msgstr "Dades de l'usuari/comprador"
+
+#: src/Plugin.php:102
+msgid "Validated tickets:"
+msgstr "Bitllets validats:"
+
+#: src/Plugin.php:100
+msgid "Validation Data"
+msgstr "Dades de validació"
+
+#: src/Plugin.php:106
+msgid "Validation History"
+msgstr "Historial de validació"
+
+#: src/Plugin.php:49 src/Plugin.php:219 src/Plugin.php:236
+msgid "View report"
+msgstr "Veure l'informe"
