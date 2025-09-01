@@ -233,7 +233,7 @@ class TMReportPlugin
             $product = wc_get_product($post_id);
             if ($product && $product->get_type() === 'ticket') {
                 $url = admin_url('edit.php?post_type=dl-ticket&page=dl-ticket-manager-report&event_id=' . $post_id);
-                echo '<a href="' . esc_url($url) . '" class="button">' . esc_html__('View report', 'dl-ticket-manager-report') . '</a>';
+                echo '<a href="' . esc_url($url) . '">' . esc_html__('View report', 'dl-ticket-manager-report') . '</a>';
             }
         }
     }
