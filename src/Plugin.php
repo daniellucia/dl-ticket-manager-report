@@ -105,25 +105,26 @@ class TMReportPlugin
 
             echo '<h3>' . esc_html__('Validation History', 'dl-ticket-manager-report') . '</h3>';
             if (!empty($validation_history)) {
-                echo '<table class="widefat">
-                <thead>
-                <tr>
-                <th>' . esc_html__('Ticket ID', 'dl-ticket-manager-report') . '</th>
-                <th>' . esc_html__('Date/Time', 'dl-ticket-manager-report') . '</th>
-                <th>' . esc_html__('User', 'dl-ticket-manager-report') . '</th>
-                </tr>
-                </thead>
-                <tbody>';
-                foreach ($validation_history as $vh) {
-                    echo '
-                    <tr>
-                        <td>' . esc_html($vh['ticket_id']) . '</td>
-                        <td>' . esc_html($vh['date']) . '</td>
-                        <td>' . esc_html($vh['user']) . '</td>
-                    </tr>';
-                }
-                echo '</tbody>
-                </table>';
+                echo '
+                <table class="widefat">
+                    <thead>
+                        <tr>
+                            <th>' . esc_html__('Ticket ID', 'dl-ticket-manager-report') . '</th>
+                            <th>' . esc_html__('Date/Time', 'dl-ticket-manager-report') . '</th>
+                            <th>' . esc_html__('User', 'dl-ticket-manager-report') . '</th>
+                        </tr>
+                    </thead>
+                    <tbody>';
+                    foreach ($validation_history as $vh) {
+                        echo '
+                        <tr>
+                            <td>' . esc_html($vh['ticket_id']) . '</td>
+                            <td>' . esc_html($vh['date']) . '</td>
+                            <td>' . esc_html($vh['user']) . '</td>
+                        </tr>';
+                    }
+                    echo '</tbody>';
+                echo '</table>';
             } else {
                 echo '<p>' . esc_html__('No validations recorded.', 'dl-ticket-manager-report') . '</p>';
             }
