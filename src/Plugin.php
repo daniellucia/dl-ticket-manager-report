@@ -1,8 +1,10 @@
 <?php
 
+namespace DL\TicketsReport;
+
 defined('ABSPATH') || exit;
 
-class TMReportPlugin
+class Plugin
 {
     public function init(): void
     {
@@ -13,7 +15,7 @@ class TMReportPlugin
 
         //Hooks internos
         add_action('dl_ticket_manager_report_before_search_form', [$this, 'showSearchReportForm']);
-        add_action('dl_ticket_manager_report', [$this, 'showReport'], 10, 5);
+        add_action('dl_ticket_manager_report', [$this, 'showReport'], 10, 6);
     }
 
     /**
@@ -52,7 +54,18 @@ class TMReportPlugin
         echo '</div>';
     }
 
-    public function showReport($event_id, $buyers, $orders, $tickets_sold, $tickets) {
+    /**
+     * Mostramos el informe completo
+     * @param mixed $event_id
+     * @param mixed $buyers
+     * @param mixed $orders
+     * @param mixed $tickets_sold
+     * @param mixed $tickets
+     * @param mixed $total_income
+     * @return void
+     * @author Daniel Lucia
+     */
+    public function showReport($event_id, $buyers, $orders, $tickets_sold, $tickets, $total_income) {
 
         
         $buyers_unique = array_unique($buyers);
@@ -206,7 +219,7 @@ class TMReportPlugin
         
         echo '<div class="wrap">';
             echo '<h1>' . esc_html__('Tickets report', 'dl-ticket-manager-report') . '</h1>';
-            do_action('dl_ticket_manager_report', $event_id, $buyers, $orders, $tickets_sold, $tickets);
+            do_action('dl_ticket_manager_report', $event_id, $buyers, $orders, $tickets_sold, $tickets, $total_income);
         echo '</div>';
     }
 

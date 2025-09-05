@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Reports for Ticket Manager
- * Description: Informes para el gestor de tickets.
+ * Description: Reports for the Ticket Manager.
  * Version: 0.0.1
  * Author: Daniel Lúcia
  * Author URI: http://www.daniellucia.es
@@ -10,14 +10,15 @@
  * Requires Plugins: dl-ticket-manager
  */
 
+use DL\TicketsReport\Plugin;
+
 defined('ABSPATH') || exit;
 
-require_once __DIR__ . '/src/Plugin.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 add_action('plugins_loaded', function () {
 
     load_plugin_textdomain('dl-ticket-manager-report', false, dirname(plugin_basename(__FILE__)) . '/languages');
 
-    $plugin = new TMReportPlugin();
-    $plugin->init();
+    (new Plugin())->init();
 });
